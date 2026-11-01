@@ -16,6 +16,10 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+/* border: 1px solid rgba(255, 255, 255, 0.3); */
+/* box-shadow: 0  8px 32px rgba(0, 0, 0, 0.25); */
 }
 
 img {
@@ -92,7 +96,7 @@ hr {
 }
 
 #nav_links a:hover {
-    color: #2d5a3d;
+    color: #df7f0a;
 }
 
 /* .bg-videos {
@@ -106,6 +110,44 @@ hr {
     pointer-events: none;
 } */
 
+/* now we will do css for the shared things like label,text and more idk */
+
+.label{
+    font-size: 14px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color:#f7f6f3;
+    margin-bottom: 24px;
+    font-weight: bolder;
+    
+}
+.section{
+    max-width: 900px;
+    margin: auto;
+    padding: 96px 40px;
+}
+.section.wide{
+    max-width: 1100px;
+}
+h2{
+    font-family: "Playfire Display" , serif;
+    font-weight: 700;
+    font-size: clamp(28px,4vw,36px);
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+.sub{
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+.text{
+    color:black ;
+    line-height: 1.9;
+    max-width: 62ch;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 15px;
+}
 main {
     position: relative;
     z-index: 1;
