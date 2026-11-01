@@ -84,13 +84,15 @@ hr {
     flex-wrap: wrap;
     text-align: center;
     padding: 12px 40px;
-    background-color: #201f1f;
+    /* background-color: #bb4f0697; */
+    background-color: #8e0000c3;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #e0ddd8;
 }
 
 #nav_links a {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 400;
     letter-spacing: 11px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -117,7 +119,7 @@ hr {
 /* now we will do css for the shared things like label,text and more idk */
 
 .label {
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: #f7f6f3;
@@ -201,7 +203,8 @@ h2 {
     /* background: #f7f7f5; */
     border: 1px solid;
     border-radius: 3px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: background 0.2s, color 0.2s, border-color 0.2s;
