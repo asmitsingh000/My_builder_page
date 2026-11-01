@@ -1,15 +1,17 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding: 70px;
 }
 
 body {
     margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--mono);
     font-size: 14px;
     line-height: 1.7;
     /* transition: background 0.2s, color 0.2s; */
+}
+img{
+    max-width: 100%;
+    display: block;
 }
 
 a {
@@ -17,7 +19,41 @@ a {
     text-decoration: none;
 }
 
-.bg-videos {
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+hr{
+    border:0;
+    height: 1px;background: #bebebdd1;
+    margin: 0;
+}
+:focus-visible{
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
+#navigaton-bar{
+    position:sticky;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#nav_links ul a{
+    font-size: 11px;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+}
+/* .bg-videos {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,13 +62,20 @@ a {
     object-fit: cover;
     z-index: -1;
     pointer-events: none;
-}
+} */
 
 main {
     position: relative;
     z-index: 1;
     /* color: white; */
     padding: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    gap: 28px;
+    margin-top: 45px;
 }
 
 .cards {
