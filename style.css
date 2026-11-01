@@ -1,5 +1,5 @@
-:root{
-    --serif: "Playfire Display" , serif;
+:root {
+    --serif: "Playfire Display", serif;
 }
 
 * {
@@ -12,18 +12,18 @@ html {
 }
 
 body {
-margin: 0;
-font-size: 14px;
-line-height: 1.7;
-background-image: url(photo/background.gif);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-/* border: 1px solid rgba(255, 255, 255, 0.3); */
-/* box-shadow: 0  8px 32px rgba(0, 0, 0, 0.25); */
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    background-image: url(photo/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    /* box-shadow: 0  8px 32px rgba(0, 0, 0, 0.25); */
 }
 
 img {
@@ -116,97 +116,113 @@ hr {
 
 /* now we will do css for the shared things like label,text and more idk */
 
-.label{
+.label {
     font-size: 14px;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color:#f7f6f3;
+    color: #f7f6f3;
     margin-bottom: 24px;
     font-weight: bolder;
-    
+
 }
-.section{
+
+.section {
     max-width: 900px;
     margin: auto;
     padding: 96px 40px;
 }
-.section.wide{
+
+.section.wide {
     max-width: 1100px;
 }
-h2{
+
+h2 {
     font-family: var(--serif);
     font-weight: 700;
-    font-size: clamp(28px,4vw,36px);
+    font-size: clamp(28px, 4vw, 36px);
     line-height: 1.3;
     margin-bottom: 12px;
 }
-.sub{
+
+.sub {
     font-size: 20px;
     margin-bottom: 28px;
 }
-.text{
-    color:black ;
+
+.text {
+    color: black;
     line-height: 1.9;
     max-width: 62ch;
     margin-bottom: 16px;
     font-weight: bold;
     font-size: 15px;
 }
-.tags{
+
+.tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-top: 28px;
 }
-.tags li{
+
+.tags li {
     padding: 4px 10px;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 2px;
     font-size: 11px;
     font-weight: bold;
-    color:#df7f0a;
+    color: #df7f0a;
 }
-.tags.small{
-    margin:0 0 18;
+
+.tags.small {
+    margin: 0 0 18;
 }
-.tags.small.li{
+
+.tags.small.li {
     font-size: 10px;
     padding: 3px 8px;
 }
-.btn-row{
-    display:flex;
+
+.btn-row {
+    display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 12px 14px;
     /* background: #f7f7f5; */
-    border:1px solid;
+    border: 1px solid;
     border-radius: 3px;
     font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.btn-work{
+
+.btn-work {
     background: #1a1a18;
     color: #df7f0a;
     border-color: #1a1a18;
 }
-.btn-work:hover{
+
+.btn-work:hover {
     background: transparent;
     color: #1a1a18;
 }
-.btn-contact{
+
+.btn-contact {
     color: #df7f0a;
     border: #df7f0a;
 }
-.btn-contact:hover{
-    color:#6b6860 ;
+
+.btn-contact:hover {
+    color: #6b6860;
     border-color: #e0ddd8;
 }
-.hero{
+
+.hero {
     max-width: 900px;
     min-height: 88vh;
     margin: 0 auto;
@@ -215,26 +231,30 @@ h2{
     flex-direction: column;
     justify-content: center;
 }
-.hero h1{
-    font-family:var(--serif);
+
+.hero h1 {
+    font-family: var(--serif);
     font-weight: 400;
-    font-size: clamp(36px,8vw,80px);
+    font-size: clamp(36px, 8vw, 80px);
     line-height: 1.1;
     letter-spacing: -0.01em;
     margin-bottom: 24px;
 }
-.leads{
+
+.leads {
     font-size: 20px;
     font-weight: 300;
-    color:rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
     max-width: 600px;
     margin-bottom: 12px;
 }
-.status{
-    color:#df7f0a;
+
+.status {
+    color: #df7f0a;
     max-width: 480px;
     margin-bottom: 12px;
 }
+
 main {
     position: relative;
     z-index: 1;
@@ -257,11 +277,62 @@ main {
     border: 1px solid var(--border);
     border-radius: 6px;
     overflow: hidden;
-    background: ;
+    background: #e1e0e0;
     transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .cards:hover {
+    border-color: #df7f0a;
     transform: translate(-4px);
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #f0efed;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 24px;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.cards h3 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.year {
+    font-size: 11px;
+    color: #158a36;
+    flex-shrink: 0;
+}
+
+.card-body p {
+    font-size: 12px;
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.link {
+    margin-top: auto;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color:#df7f0a;
 }
