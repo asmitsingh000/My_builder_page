@@ -377,3 +377,40 @@ footer{
     letter-spacing: 0.4em;
     color: #a39d95;
 }
+
+/* making this site resposnive */
+
+@media(max-width:640px){
+    #navigation-bar{
+        padding: 12px 20px;
+    }
+    .brand{
+        font-size: 16px;
+    }
+    .nav_links{
+        gap: 6px 18px;
+    }
+    .section{
+        padding: 75px 20px;
+    }
+    .hero{
+        padding: 65px 20px;
+        min-height: 80vh;
+    }
+    .footer{
+        padding: 28px 20px;
+    }
+    .btn{
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html{
+            scroll-behavior: none;
+        }
+        .cards:hover{
+            transform: none;
+        }
+    }
+}
