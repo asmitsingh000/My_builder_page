@@ -1,5 +1,6 @@
 :root {
     --serif: "Playfire Display", serif;
+    --border : black;
 }
 
 * {
@@ -200,6 +201,7 @@ h2 {
 
 .tags.small {
     margin: 0 0 18;
+    display: flex; align-items: center; justify-content: center ;
 }
 
 .tags.small.li {
