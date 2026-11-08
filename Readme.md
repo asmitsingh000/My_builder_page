@@ -25,3 +25,5 @@ cd cafe-of-pixl
 open index.html on you browser by clicking on it
 
 ```
+## Licence
+This project is licensed under the MIT License - see the LICENSE.md file for details
