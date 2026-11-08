@@ -17,3 +17,11 @@ Live :- https://asmitsingh000.github.io/My_builder_page/
 ## Built with:
 - **HTML 5**
 - **CSS**
+
+## How can you run it??
+```
+git clone https://github.com/asmitsingh000/My_builder_page.git
+cd cafe-of-pixl
+open index.html on you browser by clicking on it
+
+```
